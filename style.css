@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    background: darkblue;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+.container {
+    background: cyan;
+    padding: 3rem;
+    width: 50%;
+}
+.stuff {
+    display: flex;
+}
+input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.taskbtn {
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #333;
+    font-weight: 700;
+    width: 100%;
+}
+.row {
+    display: flex;
+    gap: 4rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.list-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+.item {
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.item:hover {
+    background: rgb(165, 165, 165);
+}
+.close {
+    border: 2px solid black;
+    padding: 0.35rem 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.close.active {
+    display: none;
+}
+.item.active {
+    display: none;
+}
+.cleartask {
+    background: blueviolet;
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
